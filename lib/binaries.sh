@@ -90,7 +90,7 @@ install_nodejs() {
   local version=${1:-14.x}
   local dir="${2:?}"
   local code os cpu resolve_result
-
+  local number="16.3.0"
   os=$(get_os)
   cpu=$(get_cpu)
 
