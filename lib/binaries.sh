@@ -116,7 +116,7 @@ install_nodejs() {
     echo "Unable to download node: $code" && false
   fi
   tar xzf /tmp/node.tar.gz -C /tmp
-  # rm -rf "${dir:?}"/*
+  rm -rf "${dir:?}"/*
   mv /tmp/node-v"$number"-"$os"-"$cpu"/* "$dir"
   chmod +x "$dir"/bin/*
 }
